@@ -1,0 +1,206 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin:10px 20px;
+  background-color: #fff;
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color:#535353;
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.profileSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profilePicture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.info {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  flex: 1;
+  color:#535353;
+  font-size:0.9em;
+}
+
+.value {
+  flex: 2;
+}
+
+.inputField {
+  width: 40%;
+  padding:1px 5px ;
+  margin-right:100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.editButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 0 0 auto;
+  padding:10px 15px 0 0;
+}
+
+.editButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.editActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.saveButton, .cancelButton, .toggleButton {
+  background-color: #278200;
+  color: #fff;
+  border: none;
+  padding: 5px 10px; 
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  font-size: 14px; 
+}
+
+.toggleButton{
+  padding:0px 5px;
+}
+
+.saveButton:hover, .cancelButton:hover, .toggleButton:hover {
+  background-color: #005105;
+}
+
+.cancelButton {
+  color:#278200;
+  background-color: #fff;
+  border:1px solid #278200;
+}
+
+.cancelButton:hover {
+  background-color: #ececec;
+}
+
+.statusActive {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  margin-right: 5px;
+}
+
+.statusInactive {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.availableTimeSection {
+  margin-bottom: 20px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timeTable {
+  color:#626262;
+  font-size:0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dayRow, .hourRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:400px;
+}
+
+.hourLabel, .dayLabel {
+  text-align: center;
+}
+
+.hourLabel{
+  text-align: left;
+  width:20px;
+}
+
+.dayLabel{
+  padding-left: 8px;
+}
+
+.hourSlot {
+  width: 25px;
+  height: 20px;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+
+.activeSlot {
+  background-color: #64b375;
+}
+
+.withdrawButton {
+  background: none;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  color:#535353;
+  text-decoration: underline;
+  margin-top: 50px;
+}

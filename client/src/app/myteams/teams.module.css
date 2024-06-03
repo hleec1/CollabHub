@@ -1,0 +1,53 @@
+.container{
+  width:100%;
+}
+
+.teamsHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color:#939393;
+  }
+  
+  .title {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .subtitle {
+    color:#787878;
+    padding: 10px;
+  }
+  
+  .teamList {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .teamCard {
+    background-color: #e0e0e0;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .teamButton {
+    background: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+  }

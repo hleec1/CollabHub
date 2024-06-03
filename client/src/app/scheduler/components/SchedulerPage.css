@@ -1,0 +1,115 @@
+.scheduler-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-grid {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr; /* 2그리드 설정 */
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .transparent-button {
+    background: transparent;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .calendar-container {
+    width: 100%;
+    max-width: 900px; /* 최대 너비 설정 */
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .fc .fc-toolbar-title {
+    font-size: 1.3em;
+    color: #092412
+
+  }
+
+  .fc .fc-button-primary {
+    color: #FFFFFF;
+    background-color: #0E341B !important;
+    border-color: #F2F2F2 !important; 
+  }
+
+  .fc .fc-button.fc-today-button {
+    padding: 2px 5px; 
+    font-size: 0.8em; 
+    background-color: #ffffff !important;
+    color: #757575;
+    border-color: #757575 !important;
+  }
+
+  .fc-day-today {
+    background-color: #ECF5EF !important;
+  }
+  
+  .fc-event-main {
+    background-color: #8DC63F !important;
+  }
+
+  .fc-daygrid-block-event {
+    border: none;
+  }
+  
+  .details-container {
+    margin-top: 5px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    max-height: 500px; /* 제한된 높이 설정 */
+    overflow-y: auto; /* 세로 스크롤 활성화 */
+  }
+  
+  .details-box {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .details-box h2 {
+    margin-top: 0;
+  }
+  
+  .details-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .details-box li {
+    margin-bottom: 10px;
+  }
+
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 24px;
+    z-index: 1000;
+    border-radius: 10px;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .close-button {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  
